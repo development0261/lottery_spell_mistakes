@@ -158,7 +158,7 @@ function StreamTable({ width }) {
   })
 
   const tableHeader = isWidthUp("sm", width)
-    ? ["Primera", "Matutino", "Vespertino", "Nocturna"]
+    ? ["Primera", "Matutina", "Vespertina", "Nocturna"]
     : ["Pri.", "Mat.", "Ves.", "Noc."]
   const dataQuery = useStaticQuery(graphql`
     query {
@@ -172,7 +172,7 @@ function StreamTable({ width }) {
     }
   `)
 
-  const mappingKeys = ["Primera", "Matutino", "Vespertino", "Nocturno"]
+  const mappingKeys = ["Primera", "Matutina", "Vespertina", "Nocturno"]
   return (
     <Grid item xs={12} sm={12} md={12} lg={12}>
       <TableContainer component={Paper} className={classes.tableContainer}>
@@ -197,8 +197,8 @@ function StreamTable({ width }) {
                           val
                             .toLowerCase()
                             .replace("pri.", "primera")
-                            .replace("mat.", "matutino")
-                            .replace("ves.", "vespertino")
+                            .replace("mat.", "matutina")
+                            .replace("ves.", "vespertina")
                             .replace("noc.", "nocturno")
                         }
                         className={classes.link}

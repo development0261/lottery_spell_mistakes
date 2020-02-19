@@ -86,7 +86,7 @@ const useStyles = makeStyles(theme => ({
 
 function LiveStream(props) {
   const classes = useStyles()
-  const colHead = ["Primera", "Matutino", "Vespertino", "Nocturna"]
+  const colHead = ["Primera", "Matutina", "Vespertina", "Nocturna"]
   const rowHead = props.rowHead
 
   var cityData = []

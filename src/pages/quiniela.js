@@ -124,7 +124,7 @@ const App = props => {
     defaultOption = rowHeader
   } else if (rowHeader) {
     // Data specific to row header
-    const colHead = ["Primera", "Matutino", "Vespertino", "Nocturna"]
+    const colHead = ["Primera", "Matutina", "Vespertina", "Nocturna"]
     displayData = data.filter((d, i) => {
       if (
         rowHeader ===
@@ -180,7 +180,7 @@ const App = props => {
       })
     })
     // Table options
-    options = ["Primera", "Matutino", "Vespertino", "Nocturna"]
+    options = ["Primera", "Matutina", "Vespertina", "Nocturna"]
     // Default options value
     defaultOption = colHeader
   }
